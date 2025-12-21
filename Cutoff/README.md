@@ -1,3 +1,5 @@
+<img width="911" height="608" alt="image" src="https://github.com/user-attachments/assets/3431fdd3-1a03-4df7-8129-178669766e15" />
+
 # Cutoff Performance Automation (Data Pipeline)
 
 ## 🚀 Executive Summary (Non-Technical)
