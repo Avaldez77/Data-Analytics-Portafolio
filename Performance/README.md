@@ -1,3 +1,5 @@
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/8fe65a05-550c-470d-97d8-495ea2f279e6" />
+
 # Operational Performance ETL (Python → SQL Server)
 
 ## 🚀 Executive Summary (Non-Technical)
