@@ -12,6 +12,12 @@ or explore the other areas: [Data Engineering & Big Data](https://github.com/Ava
 [Data Science](https://github.com/Avaldez77/Data-science-Portafolio), and
 [RPA & Process Automation](https://github.com/Avaldez77/RPAs-Portafolio).
 
+## Featured end-to-end case
+
+[Capital Bikeshare Demand Intelligence](https://github.com/Avaldez77/BikeShare-Demand-Intelligence)
+connects historical demand analysis, operational reporting, and forecast
+evaluation in one reproducible workflow.
+
 ## Projects
 
 | Project | What it demonstrates | Demo output |
