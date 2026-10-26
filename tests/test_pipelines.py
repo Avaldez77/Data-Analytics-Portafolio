@@ -123,6 +123,23 @@ class OutboundTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Unsupported Ship-To Country"):
             build_reports(source)
 
+    def test_rejects_non_finite_measures(self) -> None:
+        source = pd.DataFrame(
+            [["AR", "Air", "No", "DO-1", "inf", 1, 1]],
+            columns=[
+                "Ship-To Country",
+                "Ship Type",
+                "DG Y/N",
+                "DO",
+                "Delivery Qty",
+                "Gross Weight",
+                "Vol.",
+            ],
+        )
+
+        with self.assertRaisesRegex(ValueError, "finite numeric values"):
+            build_reports(source)
+
 
 if __name__ == "__main__":
     unittest.main()

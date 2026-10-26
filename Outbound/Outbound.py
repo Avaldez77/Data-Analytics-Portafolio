@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -39,8 +40,8 @@ def build_reports(source: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.
 
     for column in NUMERIC_COLUMNS:
         values = pd.to_numeric(orders[column], errors="coerce")
-        if values.isna().any():
-            raise ValueError(f"{column} must contain valid numeric values")
+        if values.isna().any() or not values.map(math.isfinite).all():
+            raise ValueError(f"{column} must contain finite numeric values")
         if values.lt(0).any():
             raise ValueError(f"{column} cannot contain negative values")
         orders[column] = values

@@ -17,6 +17,8 @@ The CSV files under each `examples/` folder are synthetic. They exist only to ma
 ## Run the examples
 
 The repository targets Python 3.10 or newer.
+Analytics dependencies are pinned in `requirements.txt` and `pyproject.toml`;
+the test workflow runs on Python 3.12.
 
 ```bash
 python -m venv .venv
