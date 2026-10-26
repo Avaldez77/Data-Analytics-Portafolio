@@ -1,0 +1,5 @@
+Ship-To Country,Ship Type,DG Y/N,DO,Delivery Qty,Gross Weight,Vol.
+AR,Air,No,DO-001,12,48.5,0.42
+MX,Ocean,No,DO-002,80,920.0,4.75
+CO,Air,Yes,DO-003,4,16.0,0.18
+CL,Ocean,No,DO-004,25,300.0,1.60

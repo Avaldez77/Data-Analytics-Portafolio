@@ -1,0 +1,3 @@
+buyer_code,country,group,cutoff_time,owner
+B-AR-01,AR,Prime Auto,11:00,owner-ar@example.test
+B-MX-01,MX,Channel,13:00,owner-mx@example.test

@@ -1,0 +1,4 @@
+order_id,buyer_code,created_at,created_by
+ORD-1001,B-AR-01,2026-01-05T10:30:00,system-bot
+ORD-1002,B-MX-01,2026-01-05T14:10:00,analyst@example.test
+ORD-1003,B-AR-01,2026-01-06T11:01:00,CRT-service
