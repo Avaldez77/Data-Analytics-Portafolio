@@ -3,6 +3,16 @@
 Use only the fictional CSV files in this repository. Each exercise is designed
 to be completed without access to a company system or customer data.
 
+## 0. Customer cohort retention
+
+Run the implemented [Cohort Analysis](./Cohort%20Analysis/README.md) example
+to calculate monthly active-customer counts, retention rates, and revenue by
+first-purchase month. Then extend it to test a rolling 90-day retention window.
+
+**Acceptance criteria:** each customer is assigned to exactly one cohort,
+month zero has 100% retention, and missing or duplicate transaction IDs fail
+before metrics are produced.
+
 ## 1. Performance pipeline: reconcile a late-arriving file
 
 Add a third monthly CSV with one valid record and one malformed date. Confirm
@@ -36,5 +46,6 @@ Run the current examples and test suite from this repository root:
 python Performance/performance.py Performance/examples --output outputs/performance.csv --summary outputs/performance_summary.json
 python Cutoff/Cutoff.py Cutoff/examples/operations_synthetic.csv Cutoff/examples/buyers_synthetic.csv --output outputs/cutoff.csv
 python Outbound/Outbound.py Outbound/examples/orders_synthetic.csv --output outputs/outbound.xlsx
+python Exercises/Cohort\ Analysis/cohort_analysis.py Exercises/Cohort\ Analysis/examples/transactions_synthetic.csv --output outputs/cohort_retention.csv
 python -m unittest discover -s tests -v
 ```

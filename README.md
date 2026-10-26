@@ -1,6 +1,6 @@
 # Data Analytics Portfolio
 
-Three small, runnable examples of operational analytics work: consolidating monthly files, applying cutoff rules, and producing outbound volume summaries. The original projects were built around private operational systems. This public version keeps the transformation logic while replacing private paths, credentials, names, and source data.
+Runnable examples of operational analytics work: consolidating monthly files, applying cutoff rules, producing outbound volume summaries, and measuring customer cohorts. The original projects were built around private operational systems. This public version keeps the transformation logic while replacing private paths, credentials, names, and source data.
 
 The CSV files under each `examples/` folder are synthetic. They exist only to make the code easy to review and run; they are not client records and the output should not be interpreted as a business result.
 
@@ -11,6 +11,7 @@ The CSV files under each `examples/` folder are synthetic. They exist only to ma
 | [Performance](Performance/) | Monthly-file discovery, schema checks, date validation, ISO calendar fields, and consolidation | A clean CSV plus a JSON quality summary |
 | [Cutoff](Cutoff/) | Reference-data joins, configurable cutoff rules, bot-owner reassignment, and on-time/late classification | A row-level CSV ready for BI |
 | [Outbound](Outbound/) | Data cleaning, transport-mode normalization, KPI aggregation, and multi-sheet Excel reporting | An Excel workbook with order, KPI, and quality sheets |
+| [Customer Cohort Analysis](Exercises/Cohort%20Analysis/) | Monthly retention and revenue by first-purchase cohort | A validated cohort CSV |
 | [Practical exercises](Exercises/README.md) | Data reconciliation, effective-dated rules, and quality-gated reporting | Three extension challenges |
 
 ## Run the examples

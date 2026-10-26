@@ -20,3 +20,4 @@ jobs:
           python Performance/performance.py Performance/examples --output outputs/performance.csv --summary outputs/performance_summary.json
           python Cutoff/Cutoff.py Cutoff/examples/operations_synthetic.csv Cutoff/examples/buyers_synthetic.csv --output outputs/cutoff.csv
           python Outbound/Outbound.py Outbound/examples/orders_synthetic.csv --output outputs/outbound.xlsx
+          python "Exercises/Cohort Analysis/cohort_analysis.py" "Exercises/Cohort Analysis/examples/transactions_synthetic.csv" --output outputs/cohort_retention.csv
