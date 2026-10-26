@@ -4,6 +4,14 @@ Runnable examples of operational analytics work: consolidating monthly files, ap
 
 The CSV files under each `examples/` folder are synthetic. They exist only to make the code easy to review and run; they are not client records and the output should not be interpreted as a business result.
 
+## Connected portfolio
+
+This repository focuses on analytics within a four-part data and automation
+portfolio. See the [profile overview](https://github.com/Avaldez77/Avaldez77)
+or explore the other areas: [Data Engineering & Big Data](https://github.com/Avaldez77/Data-Engineering-Big-Data-Portafolio),
+[Data Science](https://github.com/Avaldez77/Data-science-Portafolio), and
+[RPA & Process Automation](https://github.com/Avaldez77/RPAs-Portafolio).
+
 ## Projects
 
 | Project | What it demonstrates | Demo output |
