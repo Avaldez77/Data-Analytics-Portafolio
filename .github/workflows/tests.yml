@@ -21,3 +21,5 @@ jobs:
           python Cutoff/Cutoff.py Cutoff/examples/operations_synthetic.csv Cutoff/examples/buyers_synthetic.csv --output outputs/cutoff.csv
           python Outbound/Outbound.py Outbound/examples/orders_synthetic.csv --output outputs/outbound.xlsx
           python "Exercises/Cohort Analysis/cohort_analysis.py" "Exercises/Cohort Analysis/examples/transactions_synthetic.csv" --output outputs/cohort_retention.csv
+          python "Exercises/Experiment Analysis/generate_example_data.py" --output "outputs/experiment.csv"
+          python "Exercises/Experiment Analysis/experiment_analysis.py" "outputs/experiment.csv" --output "outputs/experiment_analysis.json"

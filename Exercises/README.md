@@ -1,6 +1,6 @@
 # Practical exercises
 
-Use only the fictional CSV files in this repository. Each exercise is designed
+Use only the clearly labeled illustrative CSV files in this repository. Each exercise is designed
 to be completed without access to a company system or customer data.
 
 ## 0. Customer cohort retention
@@ -12,6 +12,18 @@ first-purchase month. Then extend it to test a rolling 90-day retention window.
 **Acceptance criteria:** each customer is assigned to exactly one cohort,
 month zero has 100% retention, and missing or duplicate transaction IDs fail
 before metrics are produced.
+
+## 0.1 Experiment analysis
+
+Run the [experiment analysis](./Experiment%20Analysis/README.md) on the
+seeded example to compare a predeclared binary conversion outcome between
+control and treatment. Review the absolute lift, confidence interval, and
+two-sided p-value together; statistical significance alone does not establish
+business value or causality.
+
+**Acceptance criteria:** one unique row per user, exactly two valid variants,
+binary outcomes, explicit sample counts, and no success-shaped result for
+invalid or incomplete input.
 
 ## 1. Performance pipeline: reconcile a late-arriving file
 

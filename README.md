@@ -12,6 +12,7 @@ The CSV files under each `examples/` folder are synthetic. They exist only to ma
 | [Cutoff](Cutoff/) | Reference-data joins, configurable cutoff rules, bot-owner reassignment, and on-time/late classification | A row-level CSV ready for BI |
 | [Outbound](Outbound/) | Data cleaning, transport-mode normalization, KPI aggregation, and multi-sheet Excel reporting | An Excel workbook with order, KPI, and quality sheets |
 | [Customer Cohort Analysis](Exercises/Cohort%20Analysis/) | Monthly retention and revenue by first-purchase cohort | A validated cohort CSV |
+| [Experiment Analysis](Exercises/Experiment%20Analysis/) | pandas and SciPy analysis of conversion-rate experiments, uncertainty intervals, and a two-sided proportion test | A JSON result with counts, lift, confidence interval, and p-value |
 | [Practical exercises](Exercises/README.md) | Data reconciliation, effective-dated rules, and quality-gated reporting | Three extension challenges |
 
 ## Run the examples
@@ -29,6 +30,8 @@ python -m pip install -r requirements.txt
 python Performance/performance.py Performance/examples --output outputs/performance.csv --summary outputs/performance_summary.json
 python Cutoff/Cutoff.py Cutoff/examples/operations_synthetic.csv Cutoff/examples/buyers_synthetic.csv --output outputs/cutoff.csv
 python Outbound/Outbound.py Outbound/examples/orders_synthetic.csv --output outputs/outbound.xlsx
+python "Exercises/Experiment Analysis/generate_example_data.py" --output "Exercises/Experiment Analysis/examples/experiment.csv"
+python "Exercises/Experiment Analysis/experiment_analysis.py" "Exercises/Experiment Analysis/examples/experiment.csv" --output outputs/experiment_analysis.json
 ```
 
 Run the lightweight test suite with:
@@ -44,6 +47,10 @@ python -m unittest discover -s tests -v
 - Every pipeline validates its required schema before doing work and creates parent output folders when needed.
 - The public examples are offline demos. They do not connect to SQL Server or
   any other enterprise system.
+- Files named `*_synthetic.csv` and the experiment generator contain
+  explicitly identified illustrative data; they are not client or production
+  records. Experiment results demonstrate methodology only and do not represent
+  a real business impact.
 - SQL Server publishing is deliberately outside this public sample. In a production deployment I would keep credentials in environment or secret storage and load through a staging table with an explicit merge strategy.
 - The repository does not claim time savings, accuracy improvements, or production scale because those measurements are not included in the public evidence.
 
